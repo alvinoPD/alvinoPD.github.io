@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simetri</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-zelda">
+    <header class="z-[60] sticky top-0 ">
+        <nav class="relative z-[60] flex items-center justify-between backdrop-blur-md bg-opacity-40 px-[90px] h-[90px]">
+            <div class="flex flex-row items-center gap-[60px] ">
+                <img class="h-14 w-auto" src="images/Navbar/navbar-logo.svg" alt="Home">
+                <ul class="flex-row gap-[100px] text-white text-[2rem]">
+                    <a href="#hero" class="hover:underline hover:text-[#F3B641]">Home</a>
+                    <a href="#about-me" class="hover:underline hover:text-[#F3B641]">About me</a>
+                    <a href="#my-skill" class="hover:underline hover:text-[#F3B641]">My skill</a>
+                    <a href="#my-experience" class="hover:underline hover:text-[#F3B641]">Experience</a>
+                </ul>
+            </div>
+
+            <div class="flex-row items-center gap-3">
+                <div class="flex flex-row items-center gap-[15px]">
+                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
+                        <img class="w-11" src="images/Navbar/x-logo.svg" alt="X">
+                    </a>
+                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
+                        <img class="w-11" src="images/Navbar/ig-logo.svg" alt="IG">
+                    </a>
+                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
+                        <img class="w-11" src="images/Navbar/tiktok-logo.svg" alt="TT">
+                    </a>
+                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
+                        <img class="w-11" src="images/Navbar/yt-logo.svg" alt="YT">
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main class="bg-black text-white">
+        <!-- Section 1 "Hero" -->
+        <section id="hero" class="bg-[red] text-center py-[100px]">
+                <h1 class="font-zelda text-center text-[128px]">My portofolio</h1>
+                <p class="px-[100px] text-[32px]">Alvino Putra Dika</p>
+        </section>
+        <!-- Section 2 "about me" -->
+
+        <section id="about-me">
+            <div>
+                <h2 class="font-zelda text-center text-[80px]">About Me</h2>
+                <p class="text-[32px] px-[100px] text-center">Hai, aku Alvin.<br>
+                    aku berasal dari SMKN 1 surabaya</p>
+            </div>
+        </section>
+        <!-- Section 3 "My skills" -->
+
+        <section id="my-skill" class="font-zelda text-left w-[600px] mx-auto p-[60px]">
+            <h2 class="font-zelda text-center text-[80px]">My Skills</h2>
+            <h3 class="font-zelda text-[48px]">Aku jago promting</h3>
+            <h4 class="font-zelda text-[25px]">AI yang pernah di dipakai (dipecut)</h4>
+            <div>
+                <ul class="text-[32px] list-inside list-disc">
+                    <li>Gemini</li>
+                    <li>GPT</li>
+                    <li>Claude</li>
+                    <li>Codex</li>
+                    <li>Deepseek</li>
+                    <li>Kimi</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Section 4 "My experience" -->
+
+        <section id="experience" class="py-[100px]">
+        <div class="flex flex-col gap-4 items-center">
+
+            <h1 class="font-zelda text-[128px] 
+             text-center">
+            MY EXPERIENCE
+            </h1>
+            <div class="flex flex-row gap-4">
+                <img class="w-[600px]" src="images/foto1.png" alt="">
+                <img class="w-[600px]" src="images/foto2.png" alt="">
+            </div>
+                <div class="flex flex-row gap-4">
+                <img class="w-[600px]" src="images/foto3.png" alt="">
+                <img class="w-[600px]" src="images/foto4.png" alt="">
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer class="w-full sm:h-[500px] md:h-[350px] lg:h-[600px] bg-[url('images/footer/bg-footer.png')]
+     bg-cover bg-center px-4 py-8:px-[100px] lg:py-[88px] lg:border-t[20px] lg:border-t[#7A3D21]"> 
+        <div class="bg-[url('images/footer/frame-footer-mobile.png')] 
+        md:bg-[url('images/footer/frame-footer-desktop.png')] bg-center bg-contain bg-no-repeat lg:px-6 py-10 px-[20px] py-10 items-center justify-center flex flex-col sm:w-full h-[440px] md:170px lg:h-full"> 
+            <!-- <div class="flex flex-row items-center justify-center gap-6">  -->
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+                    <a class="lg:text-[C07E4E] hover:text-[#F9DCB4] text-[1,5rem] lg:text-[32px]" href="#hero">Home</a>
+                    <a class="lg:text-[C07E4E] hover:text-[#F9DCB4] text-[1,5rem] lg:text-[32px]" href="#about-me">about me</a>
+                    <a class="lg:text-[C07E4E] hover:text-[#F9DCB4] text-[1,5rem] lg:text-[32px]" href="#my-skill">my skill</a>
+                    <a class="lg:text-[C07E4E] hover:text-[#F9DCB4] text-[1,5rem] lg:text-[32px]" href="#my_experience">experience</a>
+                </div>
+                <!-- copyright -->
+                 <p class="text-[#F9DCB4] text-[15px] lg:text-[20px] mt-4">&copy; Alvin</p>
+            <!-- </div> -->
+        </div>
+    </footer>
+</body>
+</html>
