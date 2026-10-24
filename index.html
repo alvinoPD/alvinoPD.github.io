@@ -1,98 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simetri</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"> </script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="font-zelda">
-    <header class="z-[60] sticky top-0 ">
-        <nav class="relative z-[60] flex items-center justify-between backdrop-blur-md bg-opacity-40 px-[90px] h-[90px]">
-            <div class="flex flex-row items-center gap-[60px] ">
-                <img class="h-14 w-auto" src="images/Navbar/navbar-logo.svg" alt="Home">
-                <ul class="flex-row gap-[100px] text-white text-[2rem]">
-                    <a href="#hero" class="hover:underline hover:text-[#F3B641]">Home</a>
-                    <a href="#about-me" class="hover:underline hover:text-[#F3B641]">About me</a>
-                    <a href="#my-skill" class="hover:underline hover:text-[#F3B641]">My skill</a>
-                    <a href="#my-experience" class="hover:underline hover:text-[#F3B641]">Experience</a>
+    <header class="z-[60] sticky top-0">
+        <nav class="relative z-[60] flex items-center justify-between
+         backdrop-filter backdrop-blur-md bg-opacity-40 sm: px-6 md: px-16 lg:px-[90px] h-[90px]">
+            <div class="flex flex-row items-center gap-[16px]">
+                <img class="sm:h-12 lg:h-14 w-auto" src="./images/Navbar/navbar-logo.svg" alt="Home">
+
+                <ul class="hidden lg:flex lg:flex-row gap-[64px] text-white text-[2rem]">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#hero">
+                        Home</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#aboutme">
+                        About Me</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#myskills">
+                        My Skills</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#Experience">
+                        My Experience</a>
                 </ul>
             </div>
 
             <div class="flex-row items-center gap-3">
-                <div class="flex flex-row items-center gap-[15px]">
-                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
-                        <img class="w-11" src="images/Navbar/x-logo.svg" alt="X">
+                <div class="hidden lg:flex lg:flex-row items-center gap-[15px]">
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/Navbar/x-logo.svg" alt="X">
                     </a>
-                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
-                        <img class="w-11" src="images/Navbar/ig-logo.svg" alt="IG">
+
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/Navbar/tiktok-logo.svg" alt="tiktok">
                     </a>
-                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
-                        <img class="w-11" src="images/Navbar/tiktok-logo.svg" alt="TT">
+
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/Navbar/ig-logo.svg" alt="instagram">
                     </a>
-                    <a href="https://www.instagram.com/alvino.pd/" class="transition duration-200 east-in-out hover:grayscale hover:opacity-70 " target="_blank">
-                        <img class="w-11" src="images/Navbar/yt-logo.svg" alt="YT">
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/Navbar/yt-logo.svg" alt="youtube">
                     </a>
                 </div>
+                <button id="Humburger" class="flex lg:hidden items-center justify-center w-[48px] h-[48px]
+                bg-[#4C1C0e] rounded-lg z-[60]">
+                <img id="iconHumburger" src="images/Navbar/menu.svg" alt="Menu" class="h-[38.97p] w-[38.97px]">
+                <img id="iconClose" src="images/Navbar/exit.svg" alt="Close menu" class="h-[38.97p] w-[38.97px] hidden">
+                </button>
 
+                </div>
             </div>
         </nav>
+        <div id="mobileMenu" class="lg:hidden backdrop-blur-md bg-opacity-40 fixed inset-0 translate-x-full 
+        z-[50] transition-transform duration-200 ease-in-out">
+        <div class="h-[90px]"></div>
+        <ul class="flex flex-col items-center text-center py-6 text-white text-[2rem]">
+            <li class="w-full py-4">
+                <a href="#Hero" class="hover:underline hover:text-[#F3B641]">Home</a>
+            </li>
+            <li class="w-full py-4">
+                <a href="#aboutme" class="hover:underline hover:text-[#F3B641]">About me</a>
+            </li>
+            <li class="w-full py-4">
+                <a href="#myskills" class="hover:underline hover:text-[#F3B641]">my Skills</a>
+            </li>
+            <li class="w-full py-4">
+                <a href="#myexperience" class="hover:underline hover:text-[#F3B641]">my Experience</a>
+            </li>
 
-    </header>
-    <main class="bg-black text-white">
-        <!-- Section 1 "Hero" -->
-        <section id="hero" class="bg-[red] text-center py-[100px]">
-                <h1 class="font-zelda text-center text-[128px]">My portofolio</h1>
-                <p class="px-[100px] text-[32px]">Alvino Putra Dika</p>
-        </section>
-        <!-- Section 2 "about me" -->
-
-        <section id="about-me">
-            <div>
-                <h2 class="font-zelda text-center text-[80px]">About Me</h2>
-                <p class="text-[32px] px-[100px] text-center">Hai, aku Alvin.<br>
-                    aku berasal dari SMKN 1 surabaya</p>
-            </div>
-        </section>
-        <!-- Section 3 "My skills" -->
-
-        <section id="my-skill" class="font-zelda text-left w-[600px] mx-auto p-[60px]">
-            <h2 class="font-zelda text-center text-[80px]">My Skills</h2>
-            <h3 class="font-zelda text-[48px]">Aku jago promting</h3>
-            <h4 class="font-zelda text-[25px]">AI yang pernah di dipakai (dipecut)</h4>
-            <div>
-                <ul class="text-[32px] list-inside list-disc">
-                    <li>Gemini</li>
-                    <li>GPT</li>
-                    <li>Claude</li>
-                    <li>Codex</li>
-                    <li>Deepseek</li>
-                    <li>Kimi</li>
-                </ul>
-            </div>
-        </section>
-        <!-- Section 4 "My experience" -->
-
-        <section id="experience" class="py-[100px]">
-        <div class="flex flex-col gap-4 items-center">
-
-            <h1 class="font-zelda text-[128px] 
-             text-center">
-            MY EXPERIENCE
-            </h1>
-            <div class="flex flex-row gap-4">
-                <img class="w-[600px]" src="images/foto1.png" alt="">
-                <img class="w-[600px]" src="images/foto2.png" alt="">
-            </div>
-                <div class="flex flex-row gap-4">
-                <img class="w-[600px]" src="images/foto3.png" alt="">
-                <img class="w-[600px]" src="images/foto4.png" alt="">
-            </div>
+        </ul>
         </div>
+        
+    </header>
+    <main class="relative isolate bg-transparent text-white">
+
+        <div class="absolute inset-0 -z-10 bg-cover bg-center bg-[url('./images/Background-Image/GLACIA-PRINCIPALITY.png')]"></div>
+        <div id="bg-overlay" class="pointer-events-none absolute inset-0 -z-[5] bg-black opacity-0"></div>
+        <!-- Section 1 - Hero -->
+        <section id="hero" class=" text-center py-[100px]">
+            <h1 class="uppercase text-[4rem] md:text-[6rem] lg:text-[8rem] text-white text-center [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">My Portfolio</h1>
+            <p class="px-[100px] text-[32px]">Alvino Putra dika</p>
+
+            <div class="flex w-full justify-center items-center transition-all duration-100 hover:brightness-90">
+            <a href="#aboutme" class="px-[51px] py-[4px] md:px-[119.5px] md:py-[8px] bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)] rounded-[8px] border-[#F3B641] border-[1px] outline-[#592918] outline-[1px] drop-shadow-[0_8px_0_#592918]">
+            <p class="uppercase text-white text-[1.3rem] md:text-[1.75rem] md:leading-none">EXPLORE MORE</p>
+            </a>
+            </div>
+
         </section>
+
+        <!-- Section 2 - About me -->
+        <section id="aboutme" class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 px-6 md:px-16 lg:px-[90px] mt-100 lg:mt-60">
+            
+            <h2 class="font-zelda text-center text-[80px]">About<span class="hidden lg:inline"> ME Me</h2></span>
+            <div class="order-1 lg:order-2 shrink-0">
+            <div class="relative w-[240px] md:w-[280px] lg:w-[340px] aspect-[700/1040]">
+            <img src="images/about/Card.png" alt="Kartu profil" class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+            </div>
+            </div>
+
+            <p class=" font-times text-[#FFFFF] text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] leading-snug text-justify">Halo semua aku Alvin. aku dari smkn 1 surabaya dan hobi ku ngepromt AI</p>
+            
+                
+        </section>
+
+        <!-- Section 3 - My Skills -->
+        <section id="myskills" class="relative  w-full mx-auto p-[60px] w-full">
+            <h2 class="font-zelda text-center text-[80px]">My Skills</h2>
+            <div class="relative mx-auto aspect-[342/359] w-full max-w-[342px] md:aspect-[780/526] md:max-w-[780px]">
+                <img src="images/My-Skills/wood-plank.svg" alt="Papan kayu" class="absolute inset-0 hidden h-full w-full md:block">
+                <img src="images/My-Skills/wood-plank-mobile.svg" alt="Papan kayu" class="absolute inset-0 block h-full w-full md:hidden">
+                <div class="absolute inset-0 z-10 flex flex-col justify-center gap-1 px-10 py-8 text-left text-[#592918] md:px-16 md:py-12">
+                    <h3 class="font-zelda text-2xl md:text-[48px]">Aku Pengen jadi vibe coder</h3>
+                    <ul class="list-inside list-disc text-xl md:text-[32px]">
+                        <li>Opencode</li>
+                        <li>Codex</li>
+                        <li>Kimi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -  My Experience -->
+        <section id="experience" class="mt-100 mb-50">
+  <div class="flex flex-col gap-[1rem] items-center">
+    <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] text-center">MY EXPERIENCE</h1>
+    <div class="flex flex-col md:flex-row gap-[1rem]">
+      <img class="w-[22.5rem] lg:w-[30rem]" src="images/foto1.png" alt="Deskripsi foto 1">
+      <img class="w-[22.5rem] lg:w-[30rem]" src="images/foto2.png" alt="Deskripsi foto 2">
+    </div>
+    <div class="flex flex-col md:flex-row gap-[1rem]">
+      <img class="w-[22.5rem] lg:w-[30rem]" src="images/foto3.png" alt="Deskripsi foto 3">
+      <img class="w-[22.5rem] lg:w-[30rem]" src="images/foto4.png" alt="Deskripsi foto 4">
+    </div>
+  </div>
+</section>
+
+        
     </main>
+
+    <!-- Footer -->
     <footer class="w-full sm:h-[500px] md:h-[350px] lg:h-[600px] bg-[url('images/footer/bg-footer.png')]
      bg-cover bg-center px-4 py-8:px-[100px] lg:py-[88px] lg:border-t[20px] lg:border-t[#7A3D21]"> 
         <div class="bg-[url('images/footer/frame-footer-mobile.png')] 
@@ -109,5 +163,8 @@
             <!-- </div> -->
         </div>
     </footer>
+    <script src="./js/mobileNav.js"></script>
+    <script src="./js/bgScroll.js"></script>
 </body>
+
 </html>
